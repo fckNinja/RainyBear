@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F3317DC31F662E1D0028CD62 /* ButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3317DC21F662E1D0028CD62 /* ButtonNode.swift */; };
+		F35F47041F67B271001D1090 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35F47031F67B271001D1090 /* GameScene.swift */; };
+		F37B43981F6242170071A19B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37B43971F6242170071A19B /* AppDelegate.swift */; };
+		F37B439A1F6242170071A19B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37B43991F6242170071A19B /* ViewController.swift */; };
+		F37B439D1F6242170071A19B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F37B439B1F6242170071A19B /* Main.storyboard */; };
+		F37B439F1F6242170071A19B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F37B439E1F6242170071A19B /* Assets.xcassets */; };
+		F37B43A21F6242170071A19B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F37B43A01F6242170071A19B /* LaunchScreen.storyboard */; };
+		F37B43AD1F6242170071A19B /* CoalaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37B43AC1F6242170071A19B /* CoalaTests.swift */; };
+		F37B43B81F6242170071A19B /* CoalaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37B43B71F6242170071A19B /* CoalaUITests.swift */; };
+		F37B43CB1F6242470071A19B /* bgm.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F37B43C61F6242470071A19B /* bgm.m4a */; };
+		F37B43CC1F6242470071A19B /* button-in.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F37B43C71F6242470071A19B /* button-in.m4a */; };
+		F37B43CD1F6242470071A19B /* button-out.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F37B43C81F6242470071A19B /* button-out.m4a */; };
+		F37B43CE1F6242470071A19B /* wet.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F37B43C91F6242470071A19B /* wet.m4a */; };
+		F37B43CF1F6242470071A19B /* sprite.atlas in Resources */ = {isa = PBXBuildFile; fileRef = F37B43CA1F6242470071A19B /* sprite.atlas */; };
+		F37B43D11F627FA60071A19B /* StartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37B43D01F627FA60071A19B /* StartScene.swift */; };
+		F37B43D31F6292E80071A19B /* GlobalValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37B43D21F6292E80071A19B /* GlobalValue.swift */; };
+		F37C4BF21F6908E2003D647C /* GuideNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C4BF11F6908E2003D647C /* GuideNode.swift */; };
+		F37C4BF41F692B6F003D647C /* PlayerNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C4BF31F692B6F003D647C /* PlayerNode.swift */; };
+		F39EEC6D1F6BBBB400BB10D4 /* CounterNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39EEC6C1F6BBBB400BB10D4 /* CounterNode.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F37B43A91F6242170071A19B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F37B438C1F6242170071A19B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F37B43931F6242170071A19B;
+			remoteInfo = Coala;
+		};
+		F37B43B41F6242170071A19B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F37B438C1F6242170071A19B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F37B43931F6242170071A19B;
+			remoteInfo = Coala;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F3317DC21F662E1D0028CD62 /* ButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonNode.swift; sourceTree = "<group>"; };
+		F35F47031F67B271001D1090 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		F37B43941F6242170071A19B /* Coala.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coala.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F37B43971F6242170071A19B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F37B43991F6242170071A19B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F37B439C1F6242170071A19B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F37B439E1F6242170071A19B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F37B43A11F6242170071A19B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F37B43A31F6242170071A19B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F37B43A81F6242170071A19B /* CoalaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoalaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F37B43AC1F6242170071A19B /* CoalaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoalaTests.swift; sourceTree = "<group>"; };
+		F37B43AE1F6242170071A19B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F37B43B31F6242170071A19B /* CoalaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoalaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F37B43B71F6242170071A19B /* CoalaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoalaUITests.swift; sourceTree = "<group>"; };
+		F37B43B91F6242170071A19B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F37B43C61F6242470071A19B /* bgm.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = bgm.m4a; sourceTree = "<group>"; };
+		F37B43C71F6242470071A19B /* button-in.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "button-in.m4a"; sourceTree = "<group>"; };
+		F37B43C81F6242470071A19B /* button-out.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "button-out.m4a"; sourceTree = "<group>"; };
+		F37B43C91F6242470071A19B /* wet.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wet.m4a; sourceTree = "<group>"; };
+		F37B43CA1F6242470071A19B /* sprite.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = sprite.atlas; sourceTree = "<group>"; };
+		F37B43D01F627FA60071A19B /* StartScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartScene.swift; sourceTree = "<group>"; };
+		F37B43D21F6292E80071A19B /* GlobalValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalValue.swift; sourceTree = "<group>"; };
+		F37C4BF11F6908E2003D647C /* GuideNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideNode.swift; sourceTree = "<group>"; };
+		F37C4BF31F692B6F003D647C /* PlayerNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerNode.swift; sourceTree = "<group>"; };
+		F39EEC6C1F6BBBB400BB10D4 /* CounterNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterNode.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F37B43911F6242170071A19B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F37B43A51F6242170071A19B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F37B43B01F6242170071A19B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F3317DB51F662A000028CD62 /* CustomNodes */ = {
+			isa = PBXGroup;
+			children = (
+				F3317DC21F662E1D0028CD62 /* ButtonNode.swift */,
+				F37C4BF11F6908E2003D647C /* GuideNode.swift */,
+				F37C4BF31F692B6F003D647C /* PlayerNode.swift */,
+				F39EEC6C1F6BBBB400BB10D4 /* CounterNode.swift */,
+			);
+			path = CustomNodes;
+			sourceTree = "<group>";
+		};
+		F37B438B1F6242170071A19B = {
+			isa = PBXGroup;
+			children = (
+				F37B43961F6242170071A19B /* Coala */,
+				F37B43AB1F6242170071A19B /* CoalaTests */,
+				F37B43B61F6242170071A19B /* CoalaUITests */,
+				F37B43951F6242170071A19B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F37B43951F6242170071A19B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F37B43941F6242170071A19B /* Coala.app */,
+				F37B43A81F6242170071A19B /* CoalaTests.xctest */,
+				F37B43B31F6242170071A19B /* CoalaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F37B43961F6242170071A19B /* Coala */ = {
+			isa = PBXGroup;
+			children = (
+				F3317DB51F662A000028CD62 /* CustomNodes */,
+				F37B43C51F6242470071A19B /* Sounds */,
+				F37B43CA1F6242470071A19B /* sprite.atlas */,
+				F37B43971F6242170071A19B /* AppDelegate.swift */,
+				F37B43991F6242170071A19B /* ViewController.swift */,
+				F37B439B1F6242170071A19B /* Main.storyboard */,
+				F37B439E1F6242170071A19B /* Assets.xcassets */,
+				F37B43A01F6242170071A19B /* LaunchScreen.storyboard */,
+				F37B43A31F6242170071A19B /* Info.plist */,
+				F37B43D01F627FA60071A19B /* StartScene.swift */,
+				F37B43D21F6292E80071A19B /* GlobalValue.swift */,
+				F35F47031F67B271001D1090 /* GameScene.swift */,
+			);
+			path = Coala;
+			sourceTree = "<group>";
+		};
+		F37B43AB1F6242170071A19B /* CoalaTests */ = {
+			isa = PBXGroup;
+			children = (
+				F37B43AC1F6242170071A19B /* CoalaTests.swift */,
+				F37B43AE1F6242170071A19B /* Info.plist */,
+			);
+			path = CoalaTests;
+			sourceTree = "<group>";
+		};
+		F37B43B61F6242170071A19B /* CoalaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F37B43B71F6242170071A19B /* CoalaUITests.swift */,
+				F37B43B91F6242170071A19B /* Info.plist */,
+			);
+			path = CoalaUITests;
+			sourceTree = "<group>";
+		};
+		F37B43C51F6242470071A19B /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				F37B43C61F6242470071A19B /* bgm.m4a */,
+				F37B43C71F6242470071A19B /* button-in.m4a */,
+				F37B43C81F6242470071A19B /* button-out.m4a */,
+				F37B43C91F6242470071A19B /* wet.m4a */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F37B43931F6242170071A19B /* Coala */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F37B43BC1F6242170071A19B /* Build configuration list for PBXNativeTarget "Coala" */;
+			buildPhases = (
+				F37B43901F6242170071A19B /* Sources */,
+				F37B43911F6242170071A19B /* Frameworks */,
+				F37B43921F6242170071A19B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Coala;
+			productName = Coala;
+			productReference = F37B43941F6242170071A19B /* Coala.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F37B43A71F6242170071A19B /* CoalaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F37B43BF1F6242170071A19B /* Build configuration list for PBXNativeTarget "CoalaTests" */;
+			buildPhases = (
+				F37B43A41F6242170071A19B /* Sources */,
+				F37B43A51F6242170071A19B /* Frameworks */,
+				F37B43A61F6242170071A19B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F37B43AA1F6242170071A19B /* PBXTargetDependency */,
+			);
+			name = CoalaTests;
+			productName = CoalaTests;
+			productReference = F37B43A81F6242170071A19B /* CoalaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F37B43B21F6242170071A19B /* CoalaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F37B43C21F6242170071A19B /* Build configuration list for PBXNativeTarget "CoalaUITests" */;
+			buildPhases = (
+				F37B43AF1F6242170071A19B /* Sources */,
+				F37B43B01F6242170071A19B /* Frameworks */,
+				F37B43B11F6242170071A19B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F37B43B51F6242170071A19B /* PBXTargetDependency */,
+			);
+			name = CoalaUITests;
+			productName = CoalaUITests;
+			productReference = F37B43B31F6242170071A19B /* CoalaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F37B438C1F6242170071A19B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = nidangkun;
+				TargetAttributes = {
+					F37B43931F6242170071A19B = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = G4TG3BF495;
+						ProvisioningStyle = Automatic;
+					};
+					F37B43A71F6242170071A19B = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = B7GE75PTMZ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F37B43931F6242170071A19B;
+					};
+					F37B43B21F6242170071A19B = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = B7GE75PTMZ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F37B43931F6242170071A19B;
+					};
+				};
+			};
+			buildConfigurationList = F37B438F1F6242170071A19B /* Build configuration list for PBXProject "Coala" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F37B438B1F6242170071A19B;
+			productRefGroup = F37B43951F6242170071A19B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F37B43931F6242170071A19B /* Coala */,
+				F37B43A71F6242170071A19B /* CoalaTests */,
+				F37B43B21F6242170071A19B /* CoalaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F37B43921F6242170071A19B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F37B43CC1F6242470071A19B /* button-in.m4a in Resources */,
+				F37B43A21F6242170071A19B /* LaunchScreen.storyboard in Resources */,
+				F37B43CB1F6242470071A19B /* bgm.m4a in Resources */,
+				F37B43CE1F6242470071A19B /* wet.m4a in Resources */,
+				F37B43CD1F6242470071A19B /* button-out.m4a in Resources */,
+				F37B439F1F6242170071A19B /* Assets.xcassets in Resources */,
+				F37B43CF1F6242470071A19B /* sprite.atlas in Resources */,
+				F37B439D1F6242170071A19B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F37B43A61F6242170071A19B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F37B43B11F6242170071A19B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F37B43901F6242170071A19B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F39EEC6D1F6BBBB400BB10D4 /* CounterNode.swift in Sources */,
+				F35F47041F67B271001D1090 /* GameScene.swift in Sources */,
+				F37B439A1F6242170071A19B /* ViewController.swift in Sources */,
+				F37B43D11F627FA60071A19B /* StartScene.swift in Sources */,
+				F37B43D31F6292E80071A19B /* GlobalValue.swift in Sources */,
+				F37C4BF21F6908E2003D647C /* GuideNode.swift in Sources */,
+				F37B43981F6242170071A19B /* AppDelegate.swift in Sources */,
+				F37C4BF41F692B6F003D647C /* PlayerNode.swift in Sources */,
+				F3317DC31F662E1D0028CD62 /* ButtonNode.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F37B43A41F6242170071A19B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F37B43AD1F6242170071A19B /* CoalaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F37B43AF1F6242170071A19B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F37B43B81F6242170071A19B /* CoalaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F37B43AA1F6242170071A19B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F37B43931F6242170071A19B /* Coala */;
+			targetProxy = F37B43A91F6242170071A19B /* PBXContainerItemProxy */;
+		};
+		F37B43B51F6242170071A19B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F37B43931F6242170071A19B /* Coala */;
+			targetProxy = F37B43B41F6242170071A19B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F37B439B1F6242170071A19B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F37B439C1F6242170071A19B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F37B43A01F6242170071A19B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F37B43A11F6242170071A19B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F37B43BA1F6242170071A19B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F37B43BB1F6242170071A19B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F37B43BD1F6242170071A19B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G4TG3BF495;
+				INFOPLIST_FILE = Coala/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ndk.Coala;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F37B43BE1F6242170071A19B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G4TG3BF495;
+				INFOPLIST_FILE = Coala/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ndk.Coala;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F37B43C01F6242170071A19B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = B7GE75PTMZ;
+				INFOPLIST_FILE = CoalaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ndk.CoalaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coala.app/Coala";
+			};
+			name = Debug;
+		};
+		F37B43C11F6242170071A19B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = B7GE75PTMZ;
+				INFOPLIST_FILE = CoalaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ndk.CoalaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coala.app/Coala";
+			};
+			name = Release;
+		};
+		F37B43C31F6242170071A19B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = B7GE75PTMZ;
+				INFOPLIST_FILE = CoalaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ndk.CoalaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Coala;
+			};
+			name = Debug;
+		};
+		F37B43C41F6242170071A19B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = B7GE75PTMZ;
+				INFOPLIST_FILE = CoalaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ndk.CoalaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Coala;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F37B438F1F6242170071A19B /* Build configuration list for PBXProject "Coala" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F37B43BA1F6242170071A19B /* Debug */,
+				F37B43BB1F6242170071A19B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F37B43BC1F6242170071A19B /* Build configuration list for PBXNativeTarget "Coala" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F37B43BD1F6242170071A19B /* Debug */,
+				F37B43BE1F6242170071A19B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F37B43BF1F6242170071A19B /* Build configuration list for PBXNativeTarget "CoalaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F37B43C01F6242170071A19B /* Debug */,
+				F37B43C11F6242170071A19B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F37B43C21F6242170071A19B /* Build configuration list for PBXNativeTarget "CoalaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F37B43C31F6242170071A19B /* Debug */,
+				F37B43C41F6242170071A19B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F37B438C1F6242170071A19B /* Project object */;
+}
