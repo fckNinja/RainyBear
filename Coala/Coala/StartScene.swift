@@ -12,14 +12,14 @@ import AVFoundation
 
 class StartScene: SKScene {
     
-    var bgMusic : AVAudioPlayer!
+    //var bgMusic : AVAudioPlayer!
     
     let defaultUser = UserDefaults.standard
 
     override func didMove(to view: SKView) {
         self.backgroundColor = UIColor.white
         
-        self.playBGM()
+        
         
         
         let bgTexture = SKTexture.init(imageNamed: "background")
@@ -92,31 +92,7 @@ class StartScene: SKScene {
         
     }
     
-    func playBGM(){
-        if defaultUser.object(forKey: Sound) == nil{
-            defaultUser.setValue(true, forKey: Sound)
-        }
-        
-        
-        let filePath = Bundle.main.url(forResource: "bgm", withExtension: "m4a")
-        
-        do{
-            try bgMusic = AVAudioPlayer.init(contentsOf: filePath!)
-        }catch{
-            
-        }
-        
-        bgMusic.numberOfLoops = -1
-        bgMusic.prepareToPlay()
-        
-        
-        let defaultValue = defaultUser.object(forKey: Sound) as! Bool
-        
-        if defaultValue == true{
-            bgMusic.play()
-            
-        }
-    }
+    
     
     
     func fuck(){
@@ -131,12 +107,16 @@ class StartScene: SKScene {
 //        let defalut = UserDefaults.standard
         let sound = defaultUser.object(forKey: Sound) as! Bool
         
+        let viewcontroller = self.view?.window?.rootViewController as? ViewController
+        
+        
+        
         if (sound) == true {
             
             do{
                 try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryAmbient)
                 
-                bgMusic.stop()
+                viewcontroller?.bgMusic.stop()
                 
                 defaultUser.setValue(false, forKey: Sound)
                 
@@ -147,7 +127,7 @@ class StartScene: SKScene {
             do{
                 try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategorySoloAmbient)
                 
-                bgMusic.play()
+                viewcontroller?.bgMusic.play()
                 
                 defaultUser.setValue(true, forKey: Sound)
                 
